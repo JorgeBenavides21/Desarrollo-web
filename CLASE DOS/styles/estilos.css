@@ -1,0 +1,62 @@
+/* Selectores*/
+*{
+    font-family:Cambria;  
+   
+}
+
+h1
+{
+    background-color:green;
+    color:greenyellow;
+    padding: 10px;
+    
+}
+
+h2
+{
+background-color: white;
+color:gray;
+}
+
+a{
+    background-color: yellow;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+footer a
+{
+    color: green;
+}
+
+#descripcion{
+    background-color:green;
+    padding: 15px;
+    margin:100px;
+    border: black solid;
+    border-radius: 10px;
+}
+
+.tituloUno, .tituloDos, .tituloTres
+{
+padding: 10px;
+border-radius: 25px;
+border: black solid;
+}
+
+.parrafoUno, .parrafoTres
+{
+font-style: italic;
+background-color: white;
+border-radius: 5px;
+padding: 10px;
+}
+
+.parrafoDos, .parrafoCuatro
+{
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: white;
+border-radius: 5px;
+padding: 10px;
+}
+
