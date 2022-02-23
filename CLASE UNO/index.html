@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
-    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/validar.js"></script>
+    <title>Taller 1</title>
 </head>
-<body>
-   
-<div class="login">
-    <div class="login-header">
-      <h1>Login</h1>
-    </div>
-    <div class="login-form">
-      <h3>Username:</h3>
-      <input type="text" placeholder="Username"/><br>
-      <h3>Password:</h3>
-      <input type="password" placeholder="Password"/>
-      <br>
-      <input type="button" value="Login" class="login-button"/>
-      <br>
-      <a class="sign-up">Sign Up!</a>
-      <br>
-      <h6 class="no-access">Can't access your account?</h6>
+<body> 
+
+  <div align="center">
+      <div class="card bg-light mb-3" id="formulario" >
+    <div class="card-header">INICIO DE SESIÓN</div>
+    <div class="card-body">
+    <form name="form" method="post">
+        <fieldset>
+          <legend>Bienvenido, gracias por visitarnos</legend>
+          <div class="form-group">
+            <label class="form-label mt-4" ><b> Nombre Usuario:</b></label>
+            <input type="text" class="form-control" placeholder="Nombre de usuario" name="usuario"  maxlength="15" required>
+            <small  class="form-text text-muted">Ingrese maximo 15 caracteres</small>
+          </div>
+          <div class="form-group">
+            <label class="form-label mt-4" id="text"> <b>Contraseña:</b> </label>
+            <input type="password" class="form-control" placeholder="Ingrese su contraseña" name="contraseña"  maxlength="10" required>
+            <small class="form-text text-muted">Ingrese maximo 10 caracteres</small>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-danger" onclick="sesion();">Enviar</button>
+        </fieldset>
+
+      </form>
     </div>
   </div>
-  <div class="error-page">
-    <div class="try-again">Error: Try again?</div>
-  </div> 
+  </div>
+
+      
 </body>
 </html>
